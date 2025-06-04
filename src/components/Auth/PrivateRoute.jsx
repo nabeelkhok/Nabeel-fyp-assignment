@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { Navigate } from 'react-router-dom';
-import { auth } from '../firebase/config'; // or '../firebase/config' depending on your path
+import { auth } from '../../config/firebaseconfig'; // or '../firebase/config' depending on your path
 
 const PrivateRoute = ({ children }) => {
   const [user, setUser] = useState(null);
